@@ -1,26 +1,12 @@
 ## MathPredictor : End to End Machine Learning Project
 
-1. Docker Build checked
-2. Github Workflow
-3. Iam User In AWS
+ml application using ci cd pipelines and github action using container registry and Azure web app
 
-## Docker Setup In EC2 commands to be Executed
+## Run from the terminal
 
-#optinal
+docker build -t testdockerkrish.azurecr.io/mltest:latest .
 
-sudo apt-get update -y
+docker login testdockerkrish.azurecr.io
 
-sudo apt-get upgrade
-
-#required
-
-curl -fsSL https://get.docker.com -o get-docker.sh
-
-sudo sh get-docker.sh
-
-sudo usermod -aG docker ubuntu
-
-newgrp docker
-
-## Configure EC2 as self-hosted runner:
+docker push testdockerkrish.azurecr.io/mltest:latest
 
