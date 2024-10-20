@@ -1,6 +1,6 @@
 ## MathPredictor : End to End Machine Learning Project
 
-ml application using ci cd pipelines and github action using container registry and Azure web app
+This is a ML application using ci cd pipelines and github action using container registry and Azure web app
 
 ## Run from the terminal
 
